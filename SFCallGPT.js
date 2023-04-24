@@ -1,8 +1,8 @@
 const https = require('https')
 
-const OPENAI_API_KEY = '<OPENAI_API_KEY>';
-const OPENAI_HOSTNAME = '<OPENAI_HOSTNAME>';
-const OPENAI_PATH = '/openai/deployments/<DEPLOYMENT_NAME>/chat/completions?api-version=2023-03-15-preview';
+var OPENAI_API_KEY = process.env["OPENAI_API_KEY"];
+var OPENAI_HOSTNAME = process.env["OPENAI_HOSTNAME"];
+var OPENAI_PATH = process.env["OPENAI_PATH"]; // e.q. /openai/deployments/<Deployment-Name>/chat/completions?api-version=2023-03-15-preview
 
 function get_data(options, data) {
     return new Promise((resolve, reject) => {
@@ -23,6 +23,8 @@ function get_data(options, data) {
         req.end()
     })
 }
+
+//(async () => console.log(await get_data(options, data)))()
 
 module.exports = async function (context, req) {
     if (req.body) {
