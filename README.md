@@ -6,7 +6,7 @@ You can manually create the Azure function using the SFCallGPT.js file or use th
 
 Steps for using SFCallGPT_ARM_template.json:
 1. Follow the instructions from https://docs.snowflake.com/en/sql-reference/external-functions-creating-azure-template, but use SFCallGPT_ARM_template.json in step 2 (described at https://docs.snowflake.com/en/sql-reference/external-functions-creating-azure-template-services).
-2. Once the template is deployed, set the OPENAI_API_KEY, OPENAI_HOSTNAME, OPENAI_PATH variables in App Settings  
+2. Once the template is deployed, set the OPENAI_API_KEY, OPENAI_HOSTNAME, OPENAI_PATH variables in App Settings in Azure Function (as documented at https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal)
 
 Snowflake command templates:
 ```
