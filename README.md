@@ -30,3 +30,4 @@ Sample SQL query to Chat GPT:
 Select AskGPT('You are a poet', 'Write a poem about Snowflake');
 ``` 
 See more examples at https://www.linkedin.com/pulse/snowflake-chatgpt-release-your-information-from-free-text-kantyka/
+and at https://www.linkedin.com/pulse/generative-ai-snowflake-revolutionary-synergy-details-kantyka/
